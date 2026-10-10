@@ -1,0 +1,35 @@
+{
+  "name": "baizhi-agent-toolkit",
+  "version": "0.1.0",
+  "description": "Community Baizhi Agent Toolkit remote MCP integration with an explicitly invoked, bounded research workflow. Requires the user's account and key; hosted usage may incur charges.",
+  "author": {
+    "name": "ct-jaryn",
+    "url": "https://github.com/ct-jaryn"
+  },
+  "homepage": "https://agent-toolkit.app.baizhi.cloud",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "baizhi",
+    "research",
+    "search"
+  ],
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "Baizhi API key",
+      "description": "Your Baizhi Agent Toolkit API key. Enter it in the plugin configuration dialog, never in a prompt or shell command.",
+      "required": true,
+      "sensitive": true
+    }
+  },
+  "mcpServers": {
+    "baizhi": {
+      "type": "http",
+      "url": "https://agent-toolkit.app.baizhi.cloud/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.api_key}"
+      }
+    }
+  }
+}

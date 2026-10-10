@@ -1,0 +1,19 @@
+{
+  "name": "baizhi-community",
+  "owner": {
+    "name": "ct-jaryn",
+    "url": "https://github.com/ct-jaryn"
+  },
+  "plugins": [
+    {
+      "name": "baizhi-agent-toolkit",
+      "source": "./",
+      "version": "0.1.0",
+      "description": "Community Baizhi Agent Toolkit remote MCP integration with an explicitly invoked, bounded research workflow. Requires the user's account and key; hosted usage may incur charges.",
+      "license": "MIT"
+    }
+  ],
+  "metadata": {
+    "description": "Personal community Baizhi Agent Toolkit plugin source for Claude Code. Requires an account and user-owned key; hosted usage may incur charges."
+  }
+}
